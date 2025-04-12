@@ -50,10 +50,13 @@ Organize departments, faculty, students, classrooms, and class schedules all in 
 - `📄 timetable_management.sql` – schema + sample data (import ready!)
 
 ## 👩‍💻 Collaborators
-- Keerthana  
-- Prakarshi  
-- Dikshya  
-- Sree Deepti  
+| Role | Name | GitHub |
+|------|------|--------|
+**Keerthana** | [@HelloKeerthana](https://github.com/HelloKeerthana) |
+**Prakarshi, Naishi & Polina** | [@PrakarshiNaishiPolina](https://github.com/PrakarshiNaishiPolina) |
+**Dikshya Pokhrel** | [@DikshyPokhrel](https://github.com/DikshyPokhrel) |
+**Sree Deepti** | [@ksdsree26](https://github.com/ksdsree26) |
+
 
 ## 🚀 Usage Instructions
 1. Fire up your **MySQL server** (version **8.0+** recommended).
