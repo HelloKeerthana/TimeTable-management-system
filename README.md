@@ -11,83 +11,43 @@ Organize departments, faculty, students, classrooms, and class schedules all in 
 - ⚠️ Detect clashes in classroom or faculty scheduling  
 - 📊 Generate insightful administrative reports
 
+## ER model
+
+## Department Table
+
+| Column Name  | Data Type       | Constraints         |
+|--------------|-----------------|---------------------|
+| `dept_id`    | `INT`           | `PRIMARY KEY`       |
+| `dept_name`  | `VARCHAR(255)`   | `NOT NULL`          |
+
+### Description:
+- `dept_id`: The unique identifier for each department.
+- `dept_name`: The name of the department.
+
+---
+
+## Faculty Table
+
+| Column Name  | Data Type       | Constraints         |
+|--------------|-----------------|---------------------|
+| `faculty_id` | `INT`           | `PRIMARY KEY`       |
+| `faculty_name`| `VARCHAR(255)`  | `NOT NULL`          |
+| `dept_id`    | `INT`           | `FOREIGN KEY`       |
+
+### Description:
+- `faculty_id`: The unique identifier for each faculty member.
+- `faculty_name`: The name of the faculty member.
+- `dept_id`: A foreign key linking the faculty member to a specific department.
+
+---
+
+### Relationships:
+- `dept_id` in the **Faculty** table is a foreign key that references the `dept_id` in the **Department** table.
+- This establishes a **One-to-Many** relationship between Department and Faculty, where each department can have multiple faculty members, but each faculty member belongs to one department.
+
+
 ## 📁 Files Included
 - `📄 timetable_management.sql` – schema + sample data (import ready!)
-
-- Department
-
-Faculty
-
-Student
-
-Course
-
-Classroom
-
-Schedule
-
-Enrollment
-
-Let me first describe the ER structure, and then I’ll give you the actual diagram:
-
-🧱 Entities and Relationships:
-Department
-
-dept_id (PK)
-
-dept_name
-
-Faculty
-
-faculty_id (PK)
-
-faculty_name
-
-dept_id (FK → Department)
-
-Student
-
-student_id (PK)
-
-student_name
-
-dept_id (FK → Department)
-
-Course
-
-course_id (PK)
-
-course_name
-
-dept_id (FK → Department)
-
-Classroom
-
-room_id (PK)
-
-capacity
-
-Schedule
-
-schedule_id (PK)
-
-course_id (FK → Course)
-
-faculty_id (FK → Faculty)
-
-room_id (FK → Classroom)
-
-day, start_time, end_time
-
-Enrollment
-
-student_id (FK → Student)
-
-course_id (FK → Course)
-
-(Composite PK → student_id + course_id)
-
-
 
 ## 👩‍💻 Collaborators
 - Keerthana  
