@@ -45,13 +45,15 @@ Organize departments, faculty, students, classrooms, and class schedules all in 
 - `dept_id` in the **Faculty** table is a foreign key that references the `dept_id` in the **Department** table.
 - This establishes a **One-to-Many** relationship between Department and Faculty, where each department can have multiple faculty members, but each faculty member belongs to one department.
 
+![ER-diagram](https://github.com/user-attachments/assets/9e746a16-e26e-427e-9de8-2ea9928d5a13)
+
 
 ## 📁 Files Included
 - `📄 timetable_management.sql` – schema + sample data (import ready!)
 
 ## 👩‍💻 Collaborators
-| Role | Name | GitHub |
-|------|------|--------|
+| Name | GitHub |
+|------|--------|
 **Keerthana** | [@HelloKeerthana](https://github.com/HelloKeerthana) |
 **Prakarshi, Naishi & Polina** | [@PrakarshiNaishiPolina](https://github.com/PrakarshiNaishiPolina) |
 **Dikshya Pokhrel** | [@DikshyPokhrel](https://github.com/DikshyPokhrel) |
