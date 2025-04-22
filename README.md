@@ -53,7 +53,7 @@ Organize departments, faculty, students, classrooms, and class schedules all in 
 | Name | GitHub |
 |------|--------|
 **Keerthana** | [@HelloKeerthana](https://github.com/HelloKeerthana) |
-**Prakarshi, Naishi & Polina** | [@PrakarshiNaishiPolina](https://github.com/PrakarshiNaishiPolina) |
+**Prakarshi Polina** | [@PrakarshiNaishiPolina](https://github.com/PrakarshiNaishiPolina) |
 **Dikshya Pokhrel** | [@DikshyPokhrel](https://github.com/DikshyPokhrel) |
 **Sree Deepti** | [@ksdsree26](https://github.com/ksdsree26) |
 
