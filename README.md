@@ -1,4 +1,6 @@
-Timetable Management System (SQL Project)
+:
+
+📚 Timetable Management System (SQL Project)
 📝 Description
 A complete SQL-based database project designed to streamline and manage a university's timetable efficiently.
 It supports departments, faculty, students, classrooms, and scheduling — all integrated into one system.
@@ -61,3 +63,4 @@ Run your queries and explore the dataset for academic insights.
 
 🛠 Requirements
 MySQL Server 8.0 or higher
+
