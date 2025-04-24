@@ -17,13 +17,13 @@ It supports departments, faculty, students, classrooms, and scheduling — all i
 
 ## 📊 ER Model
 <!-- Add ER model image here -->
-![ER Model](https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841)
+<img src="https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841" width="300"/>
 
 ---
 
 ## 🗃️ Relational Schema
 <!-- Add relational schema image here -->
-![Relational Schema](https://github.com/user-attachments/assets/d4424e36-9ed6-41a6-bb98-eed9cc7affad)
+<img src="https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841" width="300"/>
 
 
 ---
