@@ -17,13 +17,15 @@ It supports departments, faculty, students, classrooms, and scheduling — all i
 
 ## 📊 ER Model
 <!-- Add ER model image here -->
-*Coming Soon — ER Diagram showcasing all entities and their relationships*
+![WhatsApp Image 2025-04-23 at 10 49 05 PM](https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841)
+
 
 ---
 
 ## 🗃️ Relational Schema
 <!-- Add relational schema image here -->
-*Coming Soon — Schema layout including primary and foreign keys*
+![WhatsApp Image 2025-04-23 at 11 25 55 PM](https://github.com/user-attachments/assets/d4424e36-9ed6-41a6-bb98-eed9cc7affad)
+
 
 ---
 
@@ -49,13 +51,22 @@ It supports departments, faculty, students, classrooms, and scheduling — all i
 | department_id    | INT            | FOREIGN KEY → Departments|
 | specialization   | VARCHAR(100)   |                          |
 
-<!-- Add additional table snapshots if needed like Courses, Students, etc. -->
-
 ---
 
-## 📁 Files Included
-- `timetable_management.sql` – contains full schema creation and pre-loaded sample data
+## 🔁 Triggers
 
+- **before_insert_faculty_email_check**  
+  Ensures the faculty email is not null or empty before insertion.
+
+- **after_insert_faculty_log**  
+  Logs a message or entry after a new faculty is added.
+
+## 📁 Files Included
+- `CREATE.sql`
+- `INSERT.sql`
+- `TRIGGERS.sql`
+- `VIEWS.sql`
+- `QUERIES.sql`
 ---
 
 ## 👩‍💻 Collaborators
@@ -74,4 +85,4 @@ It supports departments, faculty, students, classrooms, and scheduling — all i
 2. Import the SQL file using the following command:
 
 ```bash
-mysql -u your_username -p < timetable_management.sql
+mysql -u HelloKeerthana -p < CREATE.sql
