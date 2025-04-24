@@ -1,71 +1,63 @@
-# 📚 Timetable Management System (SQL Project)
+Timetable Management System (SQL Project)
+📝 Description
+A complete SQL-based database project designed to streamline and manage a university's timetable efficiently.
+It supports departments, faculty, students, classrooms, and scheduling — all integrated into one system.
 
-## 📝 Description  
-A complete **SQL-based** project designed to manage a university's timetable system with ease!  
-Organize departments, faculty, students, classrooms, and class schedules all in one place.
+⚙️ Features
+Structured relational database with multiple entities and relationships
 
-## ✨ Features
-- 🎓 Structured relational database design  
-- 📥 Sample data pre-inserted for testing  
-- 🔍 Query department-wise classes, student enrollments, and faculty workloads  
-- ⚠️ Detect clashes in classroom or faculty scheduling  
-- 📊 Generate insightful administrative reports
+Pre-filled sample data for easy testing and querying
 
-## ER model
+Analyze department-wise courses, faculty workloads, and student enrollments
 
-## Department Table
+Automatically detect clashes in room and faculty schedules
 
-| Column Name  | Data Type       | Constraints         |
-|--------------|-----------------|---------------------|
-| `dept_id`    | `INT`           | `PRIMARY KEY`       |
-| `dept_name`  | `VARCHAR(255)`   | `NOT NULL`          |
+Designed for administrative insights and schedule planning
 
-### Description:
-- `dept_id`: The unique identifier for each department.
-- `dept_name`: The name of the department.
+📊 ER Model
+<!-- Add ER model image here -->
 
----
+🗃️ Relational Schema
+<!-- Add relational schema image here -->
 
-## Faculty Table
+🧾 Database Schema Snapshot
+🔹 Departments Table
 
-| Column Name  | Data Type       | Constraints         |
-|--------------|-----------------|---------------------|
-| `faculty_id` | `INT`           | `PRIMARY KEY`       |
-| `faculty_name`| `VARCHAR(255)`  | `NOT NULL`          |
-| `dept_id`    | `INT`           | `FOREIGN KEY`       |
+Column	Type	Constraints
+department_id	INT	PRIMARY KEY
+department_name	VARCHAR(100)	NOT NULL
+hod_name	VARCHAR(100)	
+contact_email	VARCHAR(100)	
+🔹 Faculty Table
 
-### Description:
-- `faculty_id`: The unique identifier for each faculty member.
-- `faculty_name`: The name of the faculty member.
-- `dept_id`: A foreign key linking the faculty member to a specific department.
+Column	Type	Constraints
+faculty_id	INT	PRIMARY KEY
+first_name	VARCHAR(50)	NOT NULL
+last_name	VARCHAR(50)	NOT NULL
+email	VARCHAR(100)	UNIQUE
+department_id	INT	FOREIGN KEY → Departments
+specialization	VARCHAR(100)	
+<!-- Add additional table snapshots if needed like Courses, Students, etc. -->
+📁 Files Included
+timetable_management.sql – contains full schema creation and pre-loaded sample data
 
----
+👩‍💻 Collaborators
 
-### Relationships:
-- `dept_id` in the **Faculty** table is a foreign key that references the `dept_id` in the **Department** table.
-- This establishes a **One-to-Many** relationship between Department and Faculty, where each department can have multiple faculty members, but each faculty member belongs to one department.
-<img src="https://github.com/user-attachments/assets/9e746a16-e26e-427e-9de8-2ea9928d5a13" width="300">
+Name	GitHub
+Keerthana	@HelloKeerthana
+Prakarshi Polina	@PrakarshiNaishiPolina
+Dikshya Pokhrel	@DikshyPokhrel
+Sree Deepti	@ksdsree26
+🚀 Usage Instructions
+Make sure MySQL Server 8.0+ is installed and running.
 
-## 📁 Files Included
-- `📄 timetable_management.sql` – schema + sample data (import ready!)
+Import the SQL file using:
 
-## 👩‍💻 Collaborators
-| Name | GitHub |
-|------|--------|
-**Keerthana** | [@HelloKeerthana](https://github.com/HelloKeerthana) |
-**Prakarshi Polina** | [@PrakarshiNaishiPolina](https://github.com/PrakarshiNaishiPolina) |
-**Dikshya Pokhrel** | [@DikshyPokhrel](https://github.com/DikshyPokhrel) |
-**Sree Deepti** | [@ksdsree26](https://github.com/ksdsree26) |
-
-
-## 🚀 Usage Instructions
-1. Fire up your **MySQL server** (version **8.0+** recommended).
-2. Import the `timetable_management.sql` file:
-   ```bash
-   mysql -u HelloKeerthana -p < timetable_management.sql
-Run your queries and generate ✨ insights & reports ✨ from the database.
+bash
+Copy
+Edit
+mysql -u your_username -p < timetable_management.sql
+Run your queries and explore the dataset for academic insights.
 
 🛠 Requirements
-🐬 MySQL Server 8.0 or above
-
-Happy querying! 🔍
+MySQL Server 8.0 or higher
