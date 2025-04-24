@@ -17,8 +17,7 @@ It supports departments, faculty, students, classrooms, and scheduling — all i
 
 ## 📊 ER Model
 <!-- Add ER model image here -->
-![WhatsApp Image 2025-04-23 at 10 49 05 PM](https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841)
-
+<img src="![WhatsApp Image 2025-04-23 at 10 49 05 PM](https://github.com/user-attachments/assets/ea9c679d-cceb-4262-ac63-0d8b30309841)" width="100px" height="10px">
 
 ---
 
